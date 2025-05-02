@@ -928,7 +928,7 @@ public class FormatterMojo extends AbstractMojo implements ConfigurationSource {
         if (this.configCssFile != null) {
             this.cssFormatter.init(this.getOptionsFromPropertiesFile(this.configCssFile), this);
         }
-        // stop the process if not config files where found
+        // stop the process if not config files were found
         if (javaFormattingOptions == null && jsFormattingOptions == null && this.configHtmlFile == null
                 && this.configXmlFile == null && this.configJsonFile == null && this.configCssFile == null) {
             throw new MojoExecutionException(
